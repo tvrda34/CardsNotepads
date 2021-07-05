@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">KarteBlok</string>
+    <string name="app_title">Karte blokovi</string>
+    <string name="bela_title">BELA</string>
+    <string name="remi_title">REMI</string>
+    <string name="notes_desc">decoration image of notepad</string>
+    <string name="about_title">ABOUT</string>
+    <string name="arrow_back_desc">return arrow</string>
+    <string name="app_about_desc">Aplikacija za zapisivanje rezultate vaših kartaških partija.</string>
+    <string name="git_title">App GitHub</string>
+    <string name="github_logo_desc">GitHub logo</string>
+    <string name="github_text">Kod aplikacije je open-sourcan i dostupan na GitHubu. Ako misliš da imaš dobar dodatak pošalji pull-request i možda bude prihvaćen ;)</string>
+    <string name="dev_name">Tvrtko Ivasic</string>
+    <string name="dev_title_text">Developer:</string>
+    <string name="tvrda_studios_logo_desc">tvrda studios logo</string>
+</resources>
