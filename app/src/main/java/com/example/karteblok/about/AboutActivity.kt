@@ -1,8 +1,10 @@
 package com.example.karteblok.about
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.view.WindowManager
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.graphics.ColorUtils
 import com.example.karteblok.R
 import com.example.karteblok.databinding.ActivityAboutBinding
@@ -20,6 +22,12 @@ class AboutActivity : AppCompatActivity() {
 
         binding.backArrow.setOnClickListener {
             this.finish()
+        }
+
+        //ImageView - GitHub link
+        binding.githubLogo.setOnClickListener {
+            val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/tvrda34/CardsNotepads"))
+            startActivity(browserIntent)
         }
 
         //status bar setup -> color grey
