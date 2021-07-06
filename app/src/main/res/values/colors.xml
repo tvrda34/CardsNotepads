@@ -49,12 +49,17 @@
     <color name="flat_neutral_background">#801c1f22</color>
     <color name="status_bar_main">#D9edb000</color>
 
+    //custom
+    <color name="bela_green">#a661c52e</color>
+    <color name="bela_green2">#e661c52e</color>
+    <color name="black_lighter">#a61c1f22</color>
+
     //Lighter - opacity colors
     <color name="status_bar_details">#0c000000</color>
     <color name="bckg_succes">#1212ca5d</color>
     <color name="bckg_error">#12ff4848</color>
     <color name="bckg_gray">#12798fa4</color>
-    <color name="gen_one">#482db407</color>
+    <color name="green_one">#482db407</color>
     <color name="gen_two">#48a7b820</color>
     <color name="gen_thr">#4867a190</color>
     <color name="gen_fou">#48705998</color>

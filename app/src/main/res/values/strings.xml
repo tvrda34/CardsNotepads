@@ -13,4 +13,14 @@
     <string name="dev_name">Tvrtko Ivasic</string>
     <string name="dev_title_text">Developer:</string>
     <string name="tvrda_studios_logo_desc">tvrda studios logo</string>
+    <string name="null_num">0</string>
+    <string name="team1_title">Mi</string>
+    <string name="team2_title">Vi</string>
+    <string name="score_examp">216</string>
+    <string name="score_examp2">534</string>
+    <string name="separator_desc">dashed separator line</string>
+    <string name="new_enter_text">+ NOVI UNOS</string>
+    <string name="score_example">96</string>
+    <string name="score_example2">116</string>
+    <string name="separator_image_desc">separator image</string>
 </resources>
