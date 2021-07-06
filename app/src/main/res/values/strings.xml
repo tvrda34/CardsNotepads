@@ -23,4 +23,8 @@
     <string name="score_example">96</string>
     <string name="score_example2">116</string>
     <string name="separator_image_desc">separator image</string>
+    <string name="team1_first_player">Ja</string>
+    <string name="team1_second_player">Moj kolega</string>
+    <string name="team2_first_player">Protivnik desno</string>
+    <string name="team2_second_player">Protivnik lijevo</string>
 </resources>
