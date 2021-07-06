@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".bela.BelaTableActivity">
+
+    <TextView
+        android:id="@+id/team1_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_score_bckg"
+        android:text="@string/null_num"
+        android:textAlignment="center"
+        android:textAppearance="@style/BodyDarkCenter"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/team2_total"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/team2_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_score_bckg"
+        android:text="@string/null_num"
+        android:textAlignment="center"
+        android:textAppearance="@style/BodyDarkCenter"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/team1_total"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/team1_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/team1_title"
+        android:textAppearance="@style/Headline1DarkCenter"
+        android:textColor="@color/cold_gray"
+        app:layout_constraintEnd_toStartOf="@+id/team2_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/team1_total" />
+
+    <TextView
+        android:id="@+id/team2_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:text="@string/team2_title"
+        android:textAppearance="@style/Headline1DarkCenter"
+        android:textColor="@color/cold_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/team1_title"
+        app:layout_constraintTop_toBottomOf="@+id/team2_total" />
+
+    <TextView
+        android:id="@+id/team1_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="@string/score_examp"
+        android:textAppearance="@style/Headline1DarkCenter"
+        app:layout_constraintEnd_toStartOf="@+id/team2_score"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/team1_title" />
+
+    <TextView
+        android:id="@+id/team2_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:text="@string/score_examp2"
+        android:textAppearance="@style/Headline1DarkCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/team1_score"
+        app:layout_constraintTop_toBottomOf="@+id/team2_title" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:contentDescription="@string/separator_desc"
+        android:src="@drawable/ic_dashed_line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/team2_score" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
