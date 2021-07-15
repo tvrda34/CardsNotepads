@@ -1,4 +1,4 @@
-package com.example.karteblok.bela
+package com.example.karteblok.bela.table
 
 import android.content.Context
 import android.view.LayoutInflater

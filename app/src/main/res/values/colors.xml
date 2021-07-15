@@ -52,7 +52,12 @@
     //custom
     <color name="bela_green">#a661c52e</color>
     <color name="bela_green2">#e661c52e</color>
+    <color name="bela_yellow">#e6e6b800</color>
+    <color name="bela_red">#e6f92727</color>
     <color name="black_lighter">#a61c1f22</color>
+    <color name="red_ultr_light">#48f92727</color>
+    <color name="blue_light">#a641b1ff</color>
+    <color name="light_grey">#48798fa4</color>
 
     //Lighter - opacity colors
     <color name="status_bar_details">#0c000000</color>

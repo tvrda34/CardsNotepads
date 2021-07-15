@@ -6,7 +6,7 @@ import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.graphics.ColorUtils
 import com.example.karteblok.about.AboutActivity
-import com.example.karteblok.bela.BelaTableActivity
+import com.example.karteblok.bela.table.BelaTableActivity
 import com.example.karteblok.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
