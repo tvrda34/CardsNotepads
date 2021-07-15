@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/surface_1_white"
+    tools:context=".bela.entry.BelaEntryActivity">
+
+    <LinearLayout
+        android:id="@+id/entry_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/team1_entry"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/entry_background"
+            android:inputType="number"
+            android:text="@string/null_num"
+            android:textAlignment="center"
+            android:textAppearance="@style/Headline1DarkCenter"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/team2_entry"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/entry_background"
+            android:inputType="number"
+            android:text="@string/null_num"
+            android:textAlignment="center"
+            android:textAppearance="@style/Headline1DarkCenter"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/call_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/call_text"
+        android:textAppearance="@style/Headline2DarkLeft"
+        android:textColor="@color/cold_gray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/entry_container" />
+
+
+    <RadioButton
+        android:id="@+id/team1_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="64dp"
+        android:layout_weight="1"
+        app:layout_constraintEnd_toStartOf="@+id/team2_call"
+        app:layout_constraintStart_toEndOf="@+id/call_text"
+        app:layout_constraintTop_toBottomOf="@+id/entry_container" />
+
+    <RadioButton
+        android:id="@+id/team2_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_weight="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/team1_call"
+        app:layout_constraintTop_toBottomOf="@+id/entry_container" />
+
+    <include
+        layout="@layout/bela_calls_container"
+        android:id="@+id/call_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/team2_call" />
+
+    <include
+        layout="@layout/number_keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/call_container"
+        app:layout_constraintBottom_toTopOf="@+id/cancel_button" />
+
+    <android.widget.Button
+        android:id="@+id/cancel_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="4dp"
+        android:background="@android:color/transparent"
+        android:text="@string/cancel_text"
+        android:textAppearance="@style/Headline2DarkCenter"
+        android:textColor="@color/tint_secondary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/enter_button"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <android.widget.Button
+        android:id="@+id/enter_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/score_entry_button"
+        android:text="@string/entry_text"
+        android:textAppearance="@style/Headline2DarkCenter"
+        android:textColor="@color/white"
+        android:drawableStart="@drawable/ic_baseline_save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingStart="20dp"
+        android:paddingEnd="24dp"
+        app:layout_constraintStart_toEndOf="@+id/cancel_button" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.KarteBlok">
-        <activity android:name=".bela.BelaTableActivity" />
+        <activity android:name=".bela.entry.BelaEntryActivity"></activity>
+        <activity android:name=".bela.table.BelaTableActivity" />
         <activity android:name=".about.AboutActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
